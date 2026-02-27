@@ -12,4 +12,4 @@ B. TAMPILAN PENGALAMAN DAN SERTIFIKAT
 
 C. TAMPILAN KONTAK
 <img width="1350" height="646" alt="image" src="https://github.com/user-attachments/assets/476022a4-bc86-4fb3-83a6-c268e82e78ec" />
-=>  dari tampilan ini beberapa sosial media bisa di klik, pada saat di klik logo ikon media sosial langsung menuju ke akun masing-masing dan berfungsi dengan baik.
+=>  dari tampilan ini beberapa tertaut akun sosial media yang bisa di klik, pada saat di klik logo ikon media sosial langsung menuju ke akun masing-masing dan berfungsi dengan baik.
