@@ -7,7 +7,7 @@ A. TAMPILAN HALAMAN UTAMA DAN PROFILE PORTOFOLIO
 
 B. TAMPILAN PENGALAMAN DAN SERTIFIKAT
 <img width="1354" height="645" alt="image" src="https://github.com/user-attachments/assets/169b18bb-aed4-4ea9-aad4-b793b121f9bd" />
-<img width="1350" height="646" alt="image" src="https://github.com/user-attachments/assets/e099f367-3a90-4868-a6b8-00043db5bf2f" />
+<img width="1350" height="646" alt="image" src="https://github.com/user-attachments/assets/e21e3b8a-dc20-424b-be9b-dbf61c039477" />
 => dari tampilan ini bisa di klik dan tombol kembali berfungsi dengan baik
 
 C. TAMPILAN KONTAK
