@@ -1,74 +1,3 @@
-<!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTOFOLIO MAHASISWA TEKNIK INFORMATIKA</title>
-    <meta name="description"
-    content="Portofolio Mahasiswa Teknik Informatika dengan minat Web Developer dan Software Engineering">
-    <meta name="keywords"
-    content="Portofolio, Teknik Informatika, Web Developer, Programmer, Mahasiswa IT">
-    <meta name="theme-color" content="#6366f1">
-    <meta name="referrer" content="strict-origin">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Rakhella Rudiana Putri">
-      <!-- ===== OPEN GRAPH (SOCIAL MEDIA) ===== -->
-        <meta property="og:title" content="Portofolio Rakhella Rudiana Putri">
-        <meta property="og:description"
-        content="Mahasiswa Teknik Informatika | Web Developer | Software Enthusiast">
-        <meta property="og:image" content="img/preview.png">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://rakhellarudiana.github.io">
-      <!-- LinkedIn / Twitter -->
-        <meta name="twitter:card" content="summary_large_image">
-      <!-- ===== FAVICON BACKUP ===== -->
-        <link rel="icon" href="img/logo.png" sizes="32x32">
-        <link rel="shortcut icon" href="img/logo.png">
-        <link rel="apple-touch-icon" href="img/logo.png">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preload"href="img/rakhella rudiana - ukts.jpg" as="image">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-  </head>
-<body>
-<canvas id="particles"></canvas>
-<nav>
-<div class="hamburger" id="hamburger">
-  ☰
-</div>
-  <h2>PORTOFOLIO</h2>
-  <ul class="nav-links">
-    <li><a href="#tentang">TENTANG</a></li>
-    <li><a href="#pendidikan">PENDIDIKAN</a></li>
-    <li><a href="#keterampilan_pribadi">KETERAMPILAN PRIBADI</a></li>
-    <li><a href="#pengalaman">PENGALAMAN</a></li>
-    <li><a href="#sertifikat">SERTIFIKAT</a></li>
-    <li><a href="#kontak">KONTAK</a></li>
-  </ul>
-  <button id="theme-toggle">🌙</button>
-</nav>
-<section class="hero">
-  <div class="hero-slider">
-    <img src="img/rakhella rudiana - smp.jpg"
-        alt="Foto Rakhella saat SMP"
-        loading="eager"
-        decoding="async"
-        class="slide active">
-    <img src="img/rakhella rudiana - sma.jpg"         
-        alt="Foto Rakhella saat SMA"
-        loading="eager"
-        decoding="async"
-        class="slide">
-    <img src="img/rakhella rudiana - ukts.jpg"         
-        alt="Foto Rakhella saat UKTS"
-        loading="eager"
-        decoding="async"
-        class="slide">
-  </div>
-    <h1>Halo, Saya <span class="typing"></span></h1>
-    <p>Mahasiswa Teknik Informatika semester 6 dari Universitas Kristen Teknologi Solo</p>
-</section>
-<section class="section-card fade-up"></section>
 <main class="container">
   <section id="tentang" class="section-card">
     <h2>TENTANG SAYA</h2>
@@ -160,7 +89,7 @@
       <div class="contact-grid">
         <a href="https://instagram.com/rakhellarudiana" aria-label="Instagram Rakhella Rudiana" target="_blank" class="contact-item">
           <div class="icon instagram">
-            <!-- Instagram SVG -->
+            /*-- Instagram SVG --*/
             <svg viewBox="0 0 24 24">
               <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 5.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm6-1.2a1 1 0 1 1-1-1 1 1 0 0 1 1 1z"/>
             </svg>
@@ -210,48 +139,3 @@
       </div>
   </section>
 </main>
-  <!-- MODAL PENGALAMAN -->
-  <div class="modal" id="pengalaman-modal" role="dialog" aria-hidden="true" aria-modal="true">
-    <div class="modal-content pengalaman-modal-content">
-      <img id="pengalaman-image" src="" alt="Pengalaman Image">
-      <h3 id="pengalaman-title"></h3>
-      <p id="pengalaman-period"></p>
-      <p id="pengalaman-description"></p>
-      <br>
-      <button onclick="closePengalamanModal()" aria-label="Tutup modal">Kembali</button>
-    </div>
-  </div>
-  <!-- MODAL PENDIDIKAN -->
-  <div class="modal" id="edu-modal" role="dialog" aria-hidden="true" aria-modal="true">
-    <div class="modal-content edu-modal-content">
-      <img id="edu-image" src="" alt="School Image">
-      <h3 id="edu-title"></h3>
-      <p id="edu-period"></p>
-      <p id="edu-address"></p>
-      <p id="edu-phone"></p>
-      <br>
-      <button onclick="closeEduModal()" aria-label="Tutup modal">Kembali</button>
-    </div>
-  </div>
-  <!-- MODAL SERTIFIKAT -->
-  <div class="modal" id="sertifikat-modal" role="dialog" aria-hidden="true" aria-modal="true">
-    <div class="modal-content sertifikat-modal-content">
-      <div class="sertifikat-images">
-        <img id="sertifikat-image-1" src="" alt="Sertifikat Image 1">
-        <img id="sertifikat-image-2" src="" alt="Sertifikat Image 2">
-      </div>
-      <h3 id="sertifikat-title"></h3>
-      <p id="sertifikat-year"></p>
-      <p id="sertifikat-description"></p>
-      <br>
-      <button onclick="closeSertifikatModal()" aria-label="Tutup modal">Kembali</button>
-    </div>
-  </div>
-  <footer class="footer">
-    <p id="datetime"></p>
-    <p>Built with ❤️ using HTML, CSS & JavaScript</p>
-    <p>&copy; <span id="year"></span> Rakhella Rudiana Putri</p>
-  </footer>
-<script src="script.js"></script>
-</body>
-</html>

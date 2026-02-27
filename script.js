@@ -1,12 +1,7 @@
-    window.addEventListener("resize",()=>{
-        canvas.width = innerWidth;
-        canvas.height = innerHeight;
-    });
-
     document.addEventListener("keydown", e=>{
     if(e.key==="Escape") closeProyekModal();
     });
-    document.body.style.overflow="hidden";
+    document.body.style.overflow="auto";
 
     if(window.innerWidth < 768){
     particles = particles.slice(0,15);
@@ -42,17 +37,7 @@
         setTimeout(typing,60);
       }}
         typing();
-    /* SCROLL REVEAL */
-      const observer=new IntersectionObserver(entries=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-        entry.target.classList.add("show");
-      }});
-      },{threshold:0.15});
-        document.querySelectorAll(".section-card").forEach(el=>{
-        el.classList.add("hidden");
-      observer.observe(el);
-      });
+
     /* PARTICLES */
       const canvas=document.getElementById("particles");
       const ctx=canvas.getContext("2d");
@@ -143,13 +128,14 @@ document.querySelectorAll(".edu-card").forEach(card=>{
     document.getElementById("edu-address").textContent = data.address;
     document.getElementById("edu-phone").textContent = data.phone;
     document.getElementById("edu-image").src = data.image;
-
     document.getElementById("edu-modal").style.display = "flex";
+    document.body.style.overflow = "hidden";
   });
 });
 /* CLOSE */
 function closeEduModal(){
   document.getElementById("edu-modal").style.display = "none";
+  document.body.style.overflow = "auto";
 }
 
 /* DATA PENGALAMAN */
